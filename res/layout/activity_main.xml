@@ -35,7 +35,7 @@
                 android:orientation="horizontal" >
 
                 <CheckBox
-                    android:id="@+id/radioButton1"
+                    android:id="@+id/smsEnable"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_above="@+id/linearLayout1"
@@ -43,8 +43,14 @@
                    
                     android:text="" />
 
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_sms" />
+
                 <CheckBox
-                    android:id="@+id/radioButton1"
+                    android:id="@+id/emailEnable"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_above="@+id/linearLayout1"
@@ -54,10 +60,10 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@android:drawable/ic_dialog_email" />
+                    android:src="@drawable/ic_email" />
 
                 <CheckBox
-                    android:id="@+id/radioButton1"
+                    android:id="@+id/twitterEnable"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_above="@+id/linearLayout1"

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.temperaturesensor"
+    package="com.android.temperaturesensor"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -12,9 +12,10 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
+        android:name="com.android.texmperaturesensore.application.TemperatureApplication"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.temperaturesensor.MainActivity"
+            android:name="com.android.temperaturesensor.MainActivity"
             android:label="@string/app_name"
             android:windowSoftInputMode="stateHidden" >
             <intent-filter>
@@ -23,6 +24,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <service android:name="StartupService"></service>
     </application>
 
 </manifest>
