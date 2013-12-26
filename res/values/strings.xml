@@ -4,15 +4,15 @@
     <string name="app_name">TemperatureSensor</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="error_invalid_email">This email address is invalid</string>
 
     <string-array name="min_temperature">
         <item>10</item>
         <item>20</item>
         <item>30</item>
     </string-array>
-    
     <string-array name="max_temperature">
-          <item>50</item>
+        <item>50</item>
         <item>60</item>
         <item>70</item>
     </string-array>
