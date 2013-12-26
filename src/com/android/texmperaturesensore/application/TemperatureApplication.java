@@ -5,6 +5,7 @@ import android.content.Context;
 
 public class TemperatureApplication extends Application {
 
+	private boolean serviceEnable = false;
 	private boolean smsSenderEnable = false;
 	private boolean emailSenderEnable = false;
 	private boolean twitterSenderEnable = false;

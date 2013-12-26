@@ -40,7 +40,6 @@
                     android:layout_height="wrap_content"
                     android:layout_above="@+id/linearLayout1"
                     android:layout_alignRight="@+id/loginByTwitter"
-                   
                     android:text="" />
 
                 <ImageView
@@ -75,7 +74,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_twitter" />
-
             </LinearLayout>
 
             <EditText
@@ -138,14 +136,15 @@
                     android:orientation="vertical" >
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:gravity="center"
                         android:text="Min temprature:"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
                     <Spinner
                         android:id="@+id/minTemperature"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
                 </LinearLayout>
 
@@ -157,14 +156,15 @@
                     android:orientation="vertical" >
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:gravity="center"
                         android:text="Max temprature:"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
                     <Spinner
                         android:id="@+id/maxTemperature"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
                 </LinearLayout>
             </LinearLayout>
@@ -175,10 +175,8 @@
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_below="@+id/linearLayout1"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="16dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
             android:text="Login by twitter" />
     </RelativeLayout>
 

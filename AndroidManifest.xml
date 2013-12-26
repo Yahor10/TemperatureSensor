@@ -8,11 +8,15 @@
         android:minSdkVersion="8"
         android:targetSdkVersion="18" />
 
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
+        android:name="com.android.texmperaturesensore.application.TemperatureApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:name="com.android.texmperaturesensore.application.TemperatureApplication"
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.android.temperaturesensor.MainActivity"
@@ -24,7 +28,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <service android:name="StartupService"></service>
+
+        <service android:name="StartupService" >
+        </service>
+
+        <receiver android:name=".receiver.BootReceiver" >
+            <intent-filter android:priority="1000" >
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
