@@ -21,11 +21,24 @@
                 android:layout_marginBottom="10dp"
                 android:gravity="center" >
 
-                <CheckBox
+                <Switch
                     android:id="@+id/service"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="ON" />
+                    android:text="Activate service" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center" >
+
+                <Switch
+                    android:id="@+id/testMode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Test Mode        " />
             </LinearLayout>
 
             <LinearLayout
@@ -107,9 +120,9 @@
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
                 android:layout_marginTop="10dp"
-                android:inputType="phone"
                 android:ems="10"
-                android:hint="Phone" >
+                android:hint="Phone"
+                android:inputType="phone" >
             </EditText>
 
             <EditText
@@ -178,6 +191,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
+            android:onClick="onLoginTweet"
             android:text="Login by twitter" />
     </RelativeLayout>
 
